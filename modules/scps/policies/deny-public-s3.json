@@ -1,0 +1,1 @@
+{"Version":"2012-10-17","Statement":[{"Sid":"DenyPublicS3","Effect":"Deny","Action":["s3:PutBucketPublicAccessBlock"],"Resource":"*","Condition":{"StringNotEquals":{"s3:x-amz-public-access-block-configuration":"{\"BlockPublicAcls\":true,\"IgnorePublicAcls\":true,\"BlockPublicPolicy\":true,\"RestrictPublicBuckets\":true}"}}}]}

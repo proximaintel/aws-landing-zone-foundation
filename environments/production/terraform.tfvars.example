@@ -1,0 +1,11 @@
+region              = "us-east-1"
+name_prefix         = "prx-lz"
+security_account_id = "123456789012"
+inspection_vpc_cidr = "10.0.0.0/16"
+availability_zones  = ["us-east-1a", "us-east-1b"]
+
+tags = {
+  managed_by  = "terraform"
+  accelerator = "aws-landing-zone-foundation"
+  environment = "production"
+}
